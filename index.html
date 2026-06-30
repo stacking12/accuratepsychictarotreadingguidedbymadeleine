@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madeleine Psychic Tarot Reading Fontana | Psychic Tarot Reading in Fontana, CA</title>
+  <meta name="description" content="Madeleine Psychic Tarot Reading Fontana offers accurate psychic tarot reading, love tarot, and phone consultations in Fontana, CA. Call 909-371-1107.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink-deep: #160F22;
+      --ink-card: #221735;
+      --amethyst: #7C5EA8;
+      --amethyst-soft: #9C84C4;
+      --gold: #C9A35C;
+      --gold-bright: #E4C788;
+      --cream: #EFE7F4;
+      --cream-dim: #BFB3D2;
+      --line: rgba(201, 163, 92, 0.25);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--ink-deep);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(124,94,168,0.18), transparent 45%),
+        radial-gradient(circle at 85% 60%, rgba(201,163,92,0.10), transparent 50%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--gold-bright);
+      margin: 0 0 0.5em;
+    }
+
+    .eyebrow {
+      font-family: 'Jost', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      font-size: 0.72rem;
+      color: var(--amethyst-soft);
+      margin-bottom: 0.9em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .star {
+      position: absolute;
+      color: var(--gold);
+      opacity: 0.55;
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(22, 15, 34, 0.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      height: 46px;
+      width: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--gold);
+    }
+
+    .brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      color: var(--gold-bright);
+      line-height: 1.1;
+    }
+
+    .brand-name span {
+      display: block;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      color: var(--cream-dim);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-cta {
+      border: 1px solid var(--gold);
+      color: var(--gold-bright);
+      padding: 9px 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      border-radius: 2px;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold);
+      color: var(--ink-deep);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 90px 0 70px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+      line-height: 1.1;
+      font-style: italic;
+    }
+
+    .hero p.lead {
+      color: var(--cream-dim);
+      font-size: 1.08rem;
+      line-height: 1.75;
+      max-width: 46ch;
+      margin-bottom: 1.6em;
+    }
+
+    .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--ink-deep);
+      padding: 14px 30px;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      border-radius: 2px;
+      font-weight: 500;
+      display: inline-block;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(201,163,92,0.25); }
+
+    .btn-outline {
+      border: 1px solid var(--amethyst-soft);
+      color: var(--cream);
+      padding: 13px 28px;
+      font-size: 0.92rem;
+      border-radius: 2px;
+      display: inline-block;
+      transition: border-color 0.25s ease, color 0.25s ease;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold-bright); }
+
+    .hero-art {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      aspect-ratio: 4/5;
+    }
+
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.02);
+    }
+
+    .hero-art::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(22,15,34,0) 55%, rgba(22,15,34,0.85) 100%);
+    }
+
+    .hero-art-cap {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      right: 18px;
+      z-index: 2;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--gold-bright);
+    }
+
+    /* divider */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--gold);
+      margin: 0 auto 50px;
+      max-width: 1100px;
+      padding: 0 24px;
+    }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line);
+    }
+
+    section { padding: 70px 0; }
+    section.alt { background: rgba(124,94,168,0.05); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+    .section-head { text-align: center; max-width: 640px; margin: 0 auto 50px; }
+    .section-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.5rem); }
+    .section-head p { color: var(--cream-dim); line-height: 1.7; }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--ink-card);
+      border: 1px solid var(--line);
+      padding: 32px 26px;
+      border-radius: 3px;
+      position: relative;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .service-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+
+    .service-glyph {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .service-card h3 { font-size: 1.3rem; margin-bottom: 0.4em; }
+    .service-card p { color: var(--cream-dim); font-size: 0.95rem; line-height: 1.65; margin: 0; }
+
+    /* Why choose */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .why-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+    .why-list li { display: flex; gap: 16px; align-items: flex-start; }
+    .why-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--gold);
+      font-size: 1.6rem;
+      line-height: 1;
+      min-width: 38px;
+    }
+    .why-list h3 { font-size: 1.15rem; margin-bottom: 0.25em; color: var(--cream); }
+    .why-list p { color: var(--cream-dim); margin: 0; font-size: 0.94rem; line-height: 1.6; }
+
+    .why-art {
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .why-art img { width: 100%; display: block; }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+      padding: 22px 0;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--cream);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      color: var(--gold);
+      font-size: 1.4rem;
+      margin-left: 16px;
+      transition: transform 0.25s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p {
+      color: var(--cream-dim);
+      margin: 14px 0 0;
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: stretch;
+    }
+    .contact-card {
+      background: var(--ink-card);
+      border: 1px solid var(--line);
+      padding: 38px;
+      border-radius: 3px;
+    }
+    .contact-card h3 { font-size: 1.5rem; }
+    .contact-row {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .contact-icon {
+      color: var(--gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      min-width: 24px;
+    }
+    .contact-row a, .contact-row span { color: var(--cream-dim); line-height: 1.6; font-size: 0.95rem; }
+    .contact-row a:hover { color: var(--gold-bright); }
+
+    .map-wrap { border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
+    .map-wrap iframe { width: 100%; height: 100%; min-height: 360px; display: block; filter: grayscale(0.15) sepia(0.08); }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 36px 0;
+      text-align: center;
+      color: var(--cream-dim);
+      font-size: 0.85rem;
+    }
+    footer .brand-name { justify-content: center; margin-bottom: 6px; }
+
+    @media (max-width: 860px) {
+      .hero-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+      .hero-art { order: -1; max-width: 420px; margin: 0 auto; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+
+    a:focus-visible, summary:focus-visible, button:focus-visible {
+      outline: 2px solid var(--gold-bright);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-wrap">
+      <a class="brand" href="http://www.callpsychicreading.net/">
+        <img src="https://s.floomby.com/uploads/s/300626/zxTops5w.jpg?download=1&name=Screenshot-30-06-2026%2006:10:31.jpg" alt="Madeleine Psychic Tarot Reading Fontana logo">
+        <span class="brand-name">Madeleine Psychic Tarot Reading Fontana
+
+          <span></span>
+        </span>
+      </a>
+      <a class="nav-cta" href="tel:9093711107">Call 909-371-1107</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Fontana, California</div>
+          <h1>Accurate Psychic Tarot Reading, Guided by Madeleine</h1>
+          <p class="lead">For over the years, Madeleine has welcomed clients across Fontana and beyond for honest, compassionate tarot card readings on love, career, and life's crossroads. Every session is a quiet conversation with the cards, offered with warmth and clarity.</p>
+          <div class="btn-row">
+            <a class="btn-primary" href="tel:9093711107">Call Madeleine Now</a>
+            <a class="btn-outline" href="#contact">Visit the Studio</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="https://img.magnific.com/premium-photo/mystical-tarot-reading-with-wheel-fortune-card-intricate-spread-spiritual-guidance_416256-125885.jpg?uid=R239436672" alt="Mystical tarot card spread with the Wheel of Fortune card">
+          <div class="hero-art-cap">"The cards do not predict — they illuminate the path already within you."</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">✦</div>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What We Offer</div>
+          <h2>Our Services</h2>
+          <p>Madeleine Psychic Tarot Reading Fontana offers a full range of psychic tarot reading services, designed to bring clarity to the questions that matter most to you.</p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-glyph">✦</div>
+            <h3>Psychic Tarot Reading</h3>
+            <p>A complete tarot card reading session that explores your past, present, and future, helping you understand the energies at work in your life right now.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-glyph">♡</div>
+            <h3>Love Tarot Reading</h3>
+            <p>Specialized readings focused on matters of the heart — romance, relationships, reunions, and the path toward lasting connection.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-glyph">☎</div>
+            <h3>Tarot Reading By Phone</h3>
+            <p>Can't visit in person? Receive the same deeply personal tarot card consultation over the phone, wherever you are.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-glyph">☉</div>
+            <h3>Online Psychic Reading</h3>
+            <p>Convenient remote sessions for clients who prefer a private online tarot card consultation from the comfort of home.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-glyph">⟡</div>
+            <h3>Tarot Card Forecast</h3>
+            <p>Look ahead with a forward-focused reading covering the weeks and months to come — career shifts, opportunities, and timing.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-glyph">✧</div>
+            <h3>Spiritual Tarot Advisor</h3>
+            <p>Ongoing guidance for clients seeking a trusted psychic advisor for ongoing spiritual support and decision-making.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="alt">
+      <div class="container why-grid">
+        <div class="why-art">
+          <img src="https://img.magnific.com/premium-photo/mystical-tarot-reading-with-wheel-fortune-card-intricate-spread-spiritual-guidance_416256-125885.jpg?uid=R239436672" alt="Tarot cards laid out for a reading">
+        </div>
+        <div>
+          <div class="eyebrow">Why Fontana Trusts Madeleine</div>
+          <h2>Why Choose Madeleine Psychic Tarot Reading Fontana?</h2>
+          <ul class="why-list">
+            <li>
+              <span class="why-num">✦</span>
+              <div>
+                <h3>Accurate Tarot Reader</h3>
+                <p>Madeleine is known throughout Fontana, CA as an accurate tarot card reader, offering insight that feels true and grounded rather than generic.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">✦</span>
+              <div>
+                <h3>Personal, One-on-One Attention</h3>
+                <p>Every tarot card consultation is unhurried and private, giving your questions the focused attention they deserve.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">✦</span>
+              <div>
+                <h3>Flexible Ways to Connect</h3>
+                <p>Visit in person at the Fontana studio, or book a tarot reading by phone or online — whichever feels right for you.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">✦</span>
+              <div>
+                <h3>Compassionate, Judgment-Free Guidance</h3>
+                <p>As a trusted psychic advisor, Madeleine creates a warm, welcoming space where you can speak freely about whatever is on your mind.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Common Questions</div>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+
+          <details class="faq-item" open>
+            <summary>What happens during a psychic tarot reading session?</summary>
+            <p>Madeleine begins by tuning into your energy and the questions you bring forward. Cards are drawn and interpreted to offer insight into your situation, whether it concerns love, career, or personal growth. Sessions are conversational, so you're welcome to ask questions throughout.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I get a tarot reading if I'm not in Fontana?</summary>
+            <p>Yes. In addition to in-person sessions at the Fontana studio, Madeleine offers tarot reading by phone and online psychic reading, so distance is never a barrier to receiving guidance.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is love tarot reading different from a general reading?</summary>
+            <p>A love tarot reading focuses specifically on relationships, romance, and matters of the heart, while a general psychic tarot reading can cover broader areas like career, finances, or life direction.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do I book a tarot card consultation?</summary>
+            <p>Simply call 909-371-1107 to schedule your session. Madeleine will help you choose the reading style — in person, by phone, or online — that fits your needs.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How accurate are the readings?</summary>
+            <p>Madeleine is regarded by clients across Fontana, CA as an accurate and spiritual tarot advisor. Readings are approached with honesty and care, offering insight grounded in genuine intuitive connection rather than vague generalities.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Contact Information</h2>
+          <p>Reach out to schedule your psychic tarot reading at Madeleine Psychic Tarot Reading Fontana, located in the heart of Fontana, CA.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Madeleine Psychic Tarot Reading Fontana</h3>
+            <div class="contact-row">
+              <span class="contact-icon">⌂</span>
+              <span>16868 Paine St #14, Fontana, CA 92336</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">☎</span>
+              <a href="tel:9093711107">909-371-1107</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">⌘</span>
+              <a href="http://www.callpsychicreading.net/" target="_blank" rel="noopener">www.callpsychicreading.net</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-icon">⚲</span>
+              <a href="https://www.google.com/maps?cid=13258568000190762580" target="_blank" rel="nofollow noreferrer">View on Google Maps</a>
+            </div>
+            <a class="btn-primary" style="margin-top:10px;" href="tel:9093711107">Call to Book a Reading</a>
+          </div>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.506814037598!2d-117.4365756!3d34.1077727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34d7292de7c43%3A0xb7ffe55969bb4e54!2sMadeleine%20Psychic%20Tarot%20Reading%20Fontana!5e0!3m2!1sen!2s!4v1782800388616!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Madeleine Psychic Tarot Reading Fontana location map"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="brand-name" style="display:flex;">Madeleine Psychic Tarot Reading Fontana</div>
+      <p>16868 Paine St #14, Fontana, CA 92336 · 909-371-1107</p>
+      <p>&copy; 2026 Madeleine Psychic Tarot Reading Fontana. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
